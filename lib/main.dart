@@ -15,18 +15,21 @@ class XylophoneApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Center(
+              Expanded(
                 child: FlatButton(
+                  padding: EdgeInsets.all(0),
                   color: Colors.blue,
                   onPressed: () {
                     playSound(1);
                   },
                 ),
               ),
-              Center(
+              Expanded(
                 child: FlatButton(
                   color: Colors.red,
                   onPressed: () {
@@ -34,7 +37,7 @@ class XylophoneApp extends StatelessWidget {
                   },
                 ),
               ),
-              Center(
+              Expanded(
                 child: FlatButton(
                   color: Colors.yellow,
                   onPressed: () {
@@ -42,7 +45,7 @@ class XylophoneApp extends StatelessWidget {
                   },
                 ),
               ),
-              Center(
+              Expanded(
                 child: FlatButton(
                   color: Colors.green,
                   onPressed: () {
@@ -50,15 +53,15 @@ class XylophoneApp extends StatelessWidget {
                   },
                 ),
               ),
-              Center(
+              Expanded(
                 child: FlatButton(
-                  color: Colors.black,
+                  color: Colors.brown,
                   onPressed: () {
                     playSound(5);
                   },
                 ),
               ),
-              Center(
+              Expanded(
                 child: FlatButton(
                   color: Colors.purple,
                   onPressed: () {
@@ -66,7 +69,7 @@ class XylophoneApp extends StatelessWidget {
                   },
                 ),
               ),
-              Center(
+              Expanded(
                 child: FlatButton(
                   color: Colors.pink,
                   onPressed: () {
