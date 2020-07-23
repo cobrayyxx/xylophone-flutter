@@ -72,7 +72,7 @@ class XylophoneApp extends StatelessWidget {
                     final AudioCache player = AudioCache();
                     player.play('note7.wav');
                   },
-                  child:Rectangle(, , width, height),
+                  child: Text('asd'),
                 ),
               ),
             ],
