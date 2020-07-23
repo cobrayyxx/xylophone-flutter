@@ -6,6 +6,11 @@ import 'package:audioplayers/audio_cache.dart';
 void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
+  void playSound(int soundNumber) {
+    final AudioCache player = AudioCache();
+    player.play('note$soundNumber.wav');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,8 +22,7 @@ class XylophoneApp extends StatelessWidget {
                 child: FlatButton(
                   color: Colors.blue,
                   onPressed: () {
-                    final AudioCache player = AudioCache();
-                    player.play('note1.wav');
+                    playSound(1);
                   },
                 ),
               ),
@@ -26,8 +30,7 @@ class XylophoneApp extends StatelessWidget {
                 child: FlatButton(
                   color: Colors.red,
                   onPressed: () {
-                    final AudioCache player = AudioCache();
-                    player.play('note2.wav');
+                    playSound(2);
                   },
                 ),
               ),
@@ -35,8 +38,7 @@ class XylophoneApp extends StatelessWidget {
                 child: FlatButton(
                   color: Colors.yellow,
                   onPressed: () {
-                    final AudioCache player = AudioCache();
-                    player.play('note3.wav');
+                    playSound(3);
                   },
                 ),
               ),
@@ -44,8 +46,7 @@ class XylophoneApp extends StatelessWidget {
                 child: FlatButton(
                   color: Colors.green,
                   onPressed: () {
-                    final AudioCache player = AudioCache();
-                    player.play('note4.wav');
+                    playSound(4);
                   },
                 ),
               ),
@@ -53,8 +54,7 @@ class XylophoneApp extends StatelessWidget {
                 child: FlatButton(
                   color: Colors.black,
                   onPressed: () {
-                    final AudioCache player = AudioCache();
-                    player.play('note5.wav');
+                    playSound(5);
                   },
                 ),
               ),
@@ -62,8 +62,7 @@ class XylophoneApp extends StatelessWidget {
                 child: FlatButton(
                   color: Colors.purple,
                   onPressed: () {
-                    final AudioCache player = AudioCache();
-                    player.play('note6.wav');
+                    playSound(6);
                   },
                 ),
               ),
@@ -71,8 +70,7 @@ class XylophoneApp extends StatelessWidget {
                 child: FlatButton(
                   color: Colors.pink,
                   onPressed: () {
-                    final AudioCache player = AudioCache();
-                    player.play('note7.wav');
+                    playSound(7);
                   },
                 ),
               ),
