@@ -15,64 +15,65 @@ class XylophoneApp extends StatelessWidget {
             children: <Widget>[
               Center(
                 child: FlatButton(
+                  color: Colors.blue,
                   onPressed: () {
                     final AudioCache player = AudioCache();
                     player.play('note1.wav');
                   },
-                  child: Text('click me'),
                 ),
               ),
               Center(
                 child: FlatButton(
-                    onPressed: () {
-                      final AudioCache player = AudioCache();
-                      player.play('note2.wav');
-                    },
-                    child: Text('cllick')),
+                  color: Colors.red,
+                  onPressed: () {
+                    final AudioCache player = AudioCache();
+                    player.play('note2.wav');
+                  },
+                ),
               ),
               Center(
                 child: FlatButton(
+                  color: Colors.yellow,
                   onPressed: () {
                     final AudioCache player = AudioCache();
                     player.play('note3.wav');
                   },
-                  child: Text('clock'),
                 ),
               ),
               Center(
                 child: FlatButton(
+                  color: Colors.green,
                   onPressed: () {
                     final AudioCache player = AudioCache();
                     player.play('note4.wav');
                   },
-                  child: Text('clok'),
                 ),
               ),
               Center(
                 child: FlatButton(
+                  color: Colors.black,
                   onPressed: () {
                     final AudioCache player = AudioCache();
                     player.play('note5.wav');
                   },
-                  child: Text('cl'),
                 ),
               ),
               Center(
                 child: FlatButton(
+                  color: Colors.purple,
                   onPressed: () {
                     final AudioCache player = AudioCache();
                     player.play('note6.wav');
                   },
-                  child: Text('pol'),
                 ),
               ),
               Center(
                 child: FlatButton(
+                  color: Colors.pink,
                   onPressed: () {
                     final AudioCache player = AudioCache();
                     player.play('note7.wav');
                   },
-                  child: Text('asd'),
                 ),
               ),
             ],
